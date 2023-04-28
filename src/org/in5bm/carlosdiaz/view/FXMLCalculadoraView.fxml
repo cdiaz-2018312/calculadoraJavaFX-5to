@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Anchor-Pane" fx:id="scena" prefHeight="462.0" prefWidth="253.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.in5bm.carlosdiaz.controller.FXMLCalculadoraController">
+    <stylesheets>
+        <URL value="@fxmlcalculadoraview.css" />
+    </stylesheets>
+   <children>
+      <GridPane layoutX="26.0" layoutY="157.0" prefHeight="271.0" prefWidth="206.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="boton-ac" fx:id="btnAc" mnemonicParsing="false" onAction="#pressAc" prefHeight="50.0" prefWidth="109.0" styleClass="calculadora" text="AC" textFill="RED" GridPane.columnSpan="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button id="boton-siete" fx:id="btnSiete" mnemonicParsing="false" onAction="#pressNumero" prefHeight="50.0" prefWidth="50.0" text="7" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="calculadora" />
+                  <String fx:value="botones-numericos" />
+               </styleClass>
+            </Button>
+            <Button id="boton-cuatro" fx:id="btnCuatro" mnemonicParsing="false" onAction="#pressNumero" prefHeight="50.0" prefWidth="50.0" text="4" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="calculadora" />
+                  <String fx:value="botones-numericos" />
+               </styleClass></Button>
+            <Button id="boton-mas-menos" fx:id="btnMasMenos" mnemonicParsing="false" onAction="#pressMasMenos" prefHeight="50.0" prefWidth="50.0" styleClass="calculadora" text="+/-" GridPane.rowIndex="4">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button id="boton-div" fx:id="btnDiv" mnemonicParsing="false" onAction="#pressDiv" prefHeight="50.0" prefWidth="50.0" styleClass="calculadora" text="÷" GridPane.columnIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button id="boton-ocho" fx:id="btnOcho" mnemonicParsing="false" onAction="#pressNumero" prefHeight="50.0" prefWidth="50.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="calculadora" />
+                  <String fx:value="botones-numericos" />
+               </styleClass>
+            </Button>
+            <Button id="boton-cinco" fx:id="btnCinco" mnemonicParsing="false" onAction="#pressNumero" prefHeight="50.0" prefWidth="50.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="calculadora" />
+                  <String fx:value="botones-numericos" />
+               </styleClass>
+            </Button>
+            <Button id="boton-cero" fx:id="btnCero" mnemonicParsing="false" onAction="#pressNumero" prefHeight="50.0" prefWidth="50.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="calculadora" />
+                  <String fx:value="botones-numericos" />
+               </styleClass>
+            </Button>
+            <Button id="boton-porcent" fx:id="btnPorcentaje" mnemonicParsing="false" onAction="#pressPorcentaje" prefHeight="50.0" prefWidth="50.0" styleClass="calculadora" text="\%" textFill="#cc178a" GridPane.columnIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button id="boton-nueve" fx:id="btnNueve" mnemonicParsing="false" onAction="#pressNumero" prefHeight="50.0" prefWidth="50.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="calculadora" />
+                  <String fx:value="botones-numericos" />
+               </styleClass>
+            </Button>
+            <Button id="boton-seis" fx:id="btnSeis" mnemonicParsing="false" onAction="#pressNumero" prefHeight="50.0" prefWidth="50.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="calculadora" />
+                  <String fx:value="botones-numericos" />
+               </styleClass>
+            </Button>
+            <Button id="boton-tres" fx:id="btnTres" mnemonicParsing="false" onAction="#pressNumero" prefHeight="50.0" prefWidth="50.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="calculadora" />
+                  <String fx:value="botones-numericos" />
+               </styleClass>
+            </Button>
+            <Button id="boton-uno" fx:id="btnUno" mnemonicParsing="false" onAction="#pressNumero" prefHeight="50.0" prefWidth="50.0" text="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="calculadora" />
+                  <String fx:value="botones-numericos" />
+               </styleClass>
+            </Button>
+            <Button id="boton-dos" fx:id="btnDos" mnemonicParsing="false" onAction="#pressNumero" prefHeight="50.0" prefWidth="50.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="calculadora" />
+                  <String fx:value="botones-numericos" />
+               </styleClass>
+            </Button>
+            <Button id="boton-punto" fx:id="btnPunto" mnemonicParsing="false" onAction="#pressPunto" prefHeight="50.0" prefWidth="50.0" styleClass="calculadora" text="." GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button id="boton-mult" fx:id="btnMult" mnemonicParsing="false" onAction="#pressMult" prefHeight="50.0" prefWidth="50.0" styleClass="calculadora" text="×" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button id="boton-menos" fx:id="btnMenos" mnemonicParsing="false" onAction="#pressMenos" prefHeight="50.0" prefWidth="50.0" styleClass="calculadora" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button id="boton-mas" fx:id="btnMas" mnemonicParsing="false" onAction="#pressMas" prefHeight="50.0" prefWidth="50.0" styleClass="calculadora" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button id="boton-igual" fx:id="btnIgual" mnemonicParsing="false" onAction="#pressIgual" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #99CCCC;" styleClass="calculadora" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Label id="a-pane" fx:id="lblPantalla" alignment="CENTER_RIGHT" layoutX="22.0" layoutY="46.0" prefHeight="76.0" prefWidth="206.0" style="-fx-background-color: #CCCCCC;" textAlignment="JUSTIFY">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#cerrar" text="Cerrar" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#sobre" text="Sobre..." />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

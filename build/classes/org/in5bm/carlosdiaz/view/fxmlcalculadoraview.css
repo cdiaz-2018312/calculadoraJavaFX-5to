@@ -1,0 +1,88 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+#boton-igual{
+    -fx-background-color : #99CCCC;
+    -fx-background-radius: 0 0 20 0;
+}
+
+#Anchor-Pane{
+    -fx-background-color: #CBa4b1;
+}
+#boton-ac{
+    
+    -fx-text-fill:#ff0000;
+    -fx-background-radius: 20 0 5 0;
+}
+
+#boton-porcent{
+    -fx-text-fill:#cc178a;
+}
+
+#boton-div{
+    -fx-text-fill:cc178a;
+    -fx-background-radius: 0 20 0 5;
+}
+#boton-mult{
+    -fx-text-fill:cc178a;
+     -fx-background-radius: 5 0 0 5;
+}
+#boton-menos{
+    -fx-text-fill:cc178a;
+     -fx-background-radius: 5 0 0 5;
+}
+#boton-mas{
+    -fx-text-fill:cc178a;
+    -fx-background-radius: 5 0 0 5;
+}
+#boton-mas-menos{
+     -fx-text-fill:cc178a;
+     -fx-background-radius: 0 0 0 20;
+}
+#boton-punto{
+     -fx-background-radius: 5 5 0 0;
+}
+#boton-cero{
+     -fx-background-radius: 5 5 0 0;
+}
+#boton-uno{
+    -fx-background-radius: 0 5 5 0;
+}
+#boton-cuatro{
+    -fx-background-radius: 0 5 5 0;
+}
+#boton-siete{
+    -fx-background-radius: 0 5 5 0;
+}
+#boton-dos{
+    -fx-background-radius: 5 5 5 5;
+}
+#boton-tres{
+    -fx-font-size:20 px;
+    -fx-background-radius: 5 5 5 5;
+}
+#boton-cinco{
+    -fx-background-radius: 5 5 5 5;
+}
+#boton-seis{
+    -fx-background-radius: 5 5 5 5;
+}
+#boton-ocho{
+    -fx-background-radius: 5 5 5 5;
+}
+#boton-nueve{
+    -fx-background-radius: 5 5 5 5;
+}
+#a-pane{
+    -fx-background-radius: 5 5 5 5;
+}
+.botones-numericos{
+    -fx-font-size: 20px;
+}
+.calculadora:hover{
+    -fx-text-fill:plum;
+}
